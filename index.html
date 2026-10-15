@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#090914">
+<meta name="description" content="MS Cloud — Jogue sem limites. Conheça o projeto de cloud gaming e entre na lista de interessados.">
+<title>MS Cloud — Jogue sem limites</title>
+<style>
+:root{--bg:#080812;--panel:#111123;--purple:#8b5cf6;--blue:#38bdf8;--text:#f7f5ff;--muted:#b8b5ce;--line:#292443}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 75% 0%,#24104c 0,transparent 38%),var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.6}
+a{color:inherit;text-decoration:none}.wrap{width:min(1120px,92%);margin:auto}
+header{position:sticky;top:0;z-index:10;background:#080812e8;backdrop-filter:blur(14px);border-bottom:1px solid #ffffff12}
+.nav{display:flex;align-items:center;justify-content:space-between;min-height:76px;gap:20px}.brand{display:flex;align-items:center;gap:11px;font-weight:900;letter-spacing:2px}.mark{width:43px;height:43px;display:grid;place-items:center;border:1px solid #a78bfa;border-radius:14px;background:linear-gradient(145deg,#8b5cf6,#312e81);box-shadow:0 0 24px #8b5cf633;font-size:19px;font-style:italic}.brand small{display:block;font-size:10px;letter-spacing:5px;color:#a78bfa;margin-top:-5px}
+nav{display:flex;gap:25px;color:var(--muted);font-size:14px}nav a:hover{color:white}.btn{display:inline-flex;align-items:center;justify-content:center;border:0;border-radius:12px;padding:13px 19px;font-weight:800;color:white;background:linear-gradient(100deg,#7c3aed,#4f46e5);box-shadow:0 8px 28px #7c3aed33;cursor:pointer;transition:.2s}.btn:hover{transform:translateY(-2px);filter:brightness(1.1)}.btn.ghost{background:#ffffff08;border:1px solid #ffffff25;box-shadow:none}
+.hero{padding:84px 0 70px;display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:42px;min-height:560px}.eyebrow{color:#c4b5fd;font-size:12px;font-weight:800;letter-spacing:2.4px;text-transform:uppercase}.hero h1{font-size:clamp(42px,6vw,72px);line-height:1.03;letter-spacing:-2.7px;margin:18px 0}.gradient{background:linear-gradient(100deg,#c4b5fd,#8b5cf6 55%,#38bdf8);-webkit-background-clip:text;background-clip:text;color:transparent}.hero p{color:var(--muted);font-size:18px;max-width:570px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.note{font-size:12px!important;color:#8f8ba9!important;margin-top:17px}
+.visual{position:relative;min-height:370px;border:1px solid #8b5cf644;border-radius:28px;overflow:hidden;background:linear-gradient(145deg,#201044,#0d1027 55%,#11112b);padding:24px;box-shadow:0 25px 100px #6d28d933}.orb{position:absolute;width:260px;height:260px;border-radius:50%;background:#7c3aed44;filter:blur(50px);right:-40px;top:-35px}.cloud{position:relative;margin:20px auto 18px;width:180px;height:110px;border-radius:80px;background:linear-gradient(145deg,#c4b5fd,#7c3aed 58%,#4338ca);filter:drop-shadow(0 0 35px #8b5cf688);display:grid;place-items:center;font-size:46px;font-weight:1000;font-style:italic;letter-spacing:-5px}.cloud:before,.cloud:after{content:"";position:absolute;background:inherit;border-radius:50%;z-index:-1}.cloud:before{width:90px;height:90px;top:-32px;left:30px}.cloud:after{width:105px;height:105px;top:-15px;right:20px}.visual h2{text-align:center;letter-spacing:5px;margin:0;font-size:18px}.visual .sub{text-align:center;color:#c4b5fd;font-size:11px;letter-spacing:4px}.screen{position:relative;margin:26px auto 0;max-width:370px;border:1px solid #ffffff30;background:#0a0a18;border-radius:13px;padding:12px}.screen-top{display:flex;justify-content:space-between;color:#aaa5c9;font-size:10px;border-bottom:1px solid #ffffff12;padding-bottom:10px}.tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:12px}.tile{height:67px;border-radius:8px;background:linear-gradient(145deg,#35206c,#152b58 60%,#101020);border:1px solid #ffffff12;display:grid;place-items:center;font-size:22px}.screen-caption{text-align:center;font-size:10px;color:#aaa5c9;margin-top:10px}
+section{padding:55px 0}.section-head{text-align:center;max-width:680px;margin:0 auto 30px}.section-head h2{font-size:clamp(28px,4vw,42px);line-height:1.15;margin:10px 0}.section-head p{color:var(--muted)}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{border:1px solid var(--line);background:linear-gradient(150deg,#141428,#0d0d1a);border-radius:18px;padding:24px}.icon{width:46px;height:46px;display:grid;place-items:center;border-radius:13px;background:#7c3aed20;border:1px solid #8b5cf655;font-size:22px}.card h3{margin:17px 0 7px}.card p{color:var(--muted);font-size:14px;margin:0}
+.join{border:1px solid #8b5cf655;border-radius:24px;background:radial-gradient(ellipse at top right,#3b1765 0,transparent 45%),#101020;padding:clamp(24px,5vw,48px);display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:center}.join h2{font-size:clamp(28px,4vw,42px);line-height:1.1;margin:10px 0}.join p{color:var(--muted)}form{display:grid;gap:12px}input,select{width:100%;padding:14px 15px;border-radius:11px;border:1px solid #37304f;background:#090916;color:white;font:inherit}input:focus,select:focus{outline:2px solid #8b5cf6}label{font-size:13px;color:#d6d2e8}form .btn{width:100%}.form-msg{font-size:13px;color:#c4b5fd;min-height:20px}.disclaimer{font-size:12px!important;color:#8f8ba9!important}
+footer{padding:30px 0;border-top:1px solid #ffffff12;color:#9691ad;font-size:12px}.foot{display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap}.foot strong{color:#eee}
+@media(max-width:800px){nav{display:none}.hero{grid-template-columns:1fr;padding-top:58px;gap:25px}.visual{min-height:330px}.grid{grid-template-columns:1fr}.join{grid-template-columns:1fr}.hero h1{letter-spacing:-1.5px}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+<a class="brand" href="#inicio" aria-label="MS Cloud início"><span class="mark">MS</span><span>MS CLOUD<small>JOGUE SEM LIMITES</small></span></a>
+<nav><a href="#sobre">Sobre</a><a href="#vantagens">Vantagens</a><a href="#lista">Lista de interesse</a></nav>
+<a class="btn" href="#lista">Quero novidades</a>
+</div></header>
+<main>
+<div class="wrap hero" id="inicio">
+<div><div class="eyebrow">O futuro dos games está chegando</div><h1>Seu jogo.<br><span class="gradient">Na nuvem.</span></h1><p>Conheça a MS Cloud: um projeto de cloud gaming pensado para aproximar os jogadores dos seus games favoritos, sem depender de um computador potente.</p><div class="actions"><a class="btn" href="#lista">Entrar na lista de interesse ↗</a><a class="btn ghost" href="#sobre">Conhecer o projeto</a></div><p class="note">Projeto em desenvolvimento. O serviço de jogos ainda não está disponível.</p></div>
+<div class="visual" aria-label="Ilustração da marca MS Cloud"><div class="orb"></div><div class="cloud">MS</div><h2>MS CLOUD</h2><div class="sub">JOGUE SEM LIMITES</div><div class="screen"><div class="screen-top"><span>MS CLOUD / BIBLIOTECA</span><span>● CONCEITO</span></div><div class="tiles"><div class="tile">🎮</div><div class="tile">⚡</div><div class="tile">☁️</div></div><div class="screen-caption">Uma nova experiência gamer está sendo planejada.</div></div></div>
+</div>
+<section id="sobre"><div class="wrap"><div class="section-head"><div class="eyebrow">Conheça a MS Cloud</div><h2>Jogar deve ser mais acessível.</h2><p>Estamos no começo da jornada. O primeiro passo é entender o que os jogadores precisam e encontrar tecnologia parceira para oferecer uma experiência de qualidade.</p></div>
+<div class="grid"><article class="card"><div class="icon">☁️</div><h3>Jogue pela nuvem</h3><p>A proposta é transmitir os jogos pela internet para dispositivos compatíveis, dependendo da tecnologia que for viabilizada.</p></article><article class="card"><div class="icon">📱</div><h3>Pensado para você</h3><p>Queremos estudar uma experiência simples para celular e computador, com informações claras sobre compatibilidade.</p></article><article class="card"><div class="icon">🚀</div><h3>Crescer com responsabilidade</h3><p>Vamos validar a procura, testar a qualidade e entender os custos antes de lançar planos pagos.</p></article></div></div></section>
+<section id="vantagens"><div class="wrap"><div class="section-head"><div class="eyebrow">Nosso plano</div><h2>Construindo etapa por etapa.</h2><p>Transparência desde o primeiro dia: sem prometer acesso a jogos antes de termos a infraestrutura pronta.</p></div><div class="grid"><article class="card"><div class="icon">01</div><h3>Ouvir os jogadores</h3><p>Descobrir quais jogos, aparelhos e preços fariam sentido para a comunidade.</p></article><article class="card"><div class="icon">02</div><h3>Encontrar parceiros</h3><p>Avaliar servidores, latência, direitos de uso dos jogos e custo real do serviço.</p></article><article class="card"><div class="icon">03</div><h3>Testar antes de lançar</h3><p>Fazer testes controlados e só abrir o serviço quando estiver funcionando de verdade.</p></article></div></div></section>
+<section id="lista"><div class="wrap"><div class="join"><div><div class="eyebrow">Faça parte do começo</div><h2>Receba novidades da MS Cloud.</h2><p>Estamos reunindo pessoas interessadas para conhecer melhor o público e compartilhar atualizações do projeto.</p><p class="disclaimer">Este formulário abre seu aplicativo de e-mail com uma mensagem pronta. Nenhum dado é enviado automaticamente por esta página.</p></div>
+<form id="interestForm"><div><label for="name">Como podemos te chamar?</label><input id="name" name="name" placeholder="Seu nome" required maxlength="80"></div><div><label for="email">Seu e-mail</label><input id="email" name="email" type="email" placeholder="voce@email.com" required maxlength="160"></div><div><label for="device">Onde você gostaria de jogar?</label><select id="device" name="device"><option>Celular</option><option>Computador</option><option>Celular e computador</option></select></div><button class="btn" type="submit">Demonstrar interesse ↗</button><div class="form-msg" id="formMsg" role="status"></div></form>
+</div></div></section>
+</main>
+<footer><div class="wrap foot"><div><strong>MS CLOUD</strong> · Jogue sem limites.</div><div>© <span id="year"></span> MS Cloud · Projeto em desenvolvimento</div></div></footer>
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+document.getElementById('interestForm').addEventListener('submit', function(e){
+ e.preventDefault();
+ const name=document.getElementById('name').value.trim();
+ const email=document.getElementById('email').value.trim();
+ const device=document.getElementById('device').value;
+ const subject=encodeURIComponent('Interesse no projeto MS Cloud');
+ const body=encodeURIComponent('Olá! Quero receber novidades da MS Cloud.\\nNome: '+name+'\\nE-mail: '+email+'\\nDispositivo: '+device+'\\n\\nEsta mensagem foi preparada pelo site de apresentação.');
+ document.getElementById('formMsg').textContent='Abrindo seu aplicativo de e-mail para você enviar a mensagem…';
+ window.location.href='mailto:?subject='+subject+'&body='+body;
+});
+</script>
+</body>
+</html>
